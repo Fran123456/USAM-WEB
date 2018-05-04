@@ -1,0 +1,14 @@
+echo "# USAM-WEB" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/Fran123456/USAM-WEB.git
+git push -u origin master
+
+
+git remote add origin https://github.com/Fran123456/USAM-WEB.git
+git push -u origin master
+
+
+Fran123456
+Paginaazul1
