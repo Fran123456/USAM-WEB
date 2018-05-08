@@ -19,11 +19,11 @@
       transition: background .5s ease-in-out, padding .5s ease-in-out;
     }
     .top-nav-collapse {
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.8);
     }
     @media only screen and (max-width: 768px) {
       .navbar {
-        background-color: #667490;
+        background-color: rgba(0, 0, 0, 0.8);
       }
     }
 
@@ -67,6 +67,25 @@
   {
     background-color: #8EB6E5;
   }
+
+  .navbar-nav {
+      display: flex;
+      -webkit-box-orient: vertical;
+      -ms-flex-direction: column;
+      flex-direction: row;
+      padding-left: 0;
+      margin-bottom: 0;
+  }
+  .navbar-nav.navbar-center {
+      position: absolute;
+      left: 50%;
+      transform: translatex(-50%);
+  }
+
+  .navbar .navbar-header,
+  .navbar-collapse {
+      float:none;
+}
   </style>
 
 <body>
@@ -78,25 +97,26 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="basicExampleNav">
+    <div class="collapse navbar-collapse text-center" id="basicExampleNav">
       <!-- Links -->
-      <ul class="navbar-nav mr-auto text-center">
-        <li class="nav-item">
-          <a class="nav-link waves-effect waves-light" href="">Metas<br> <img class="" src="img/metas.png" href="60px" width="60px" alt=""></a>
+      <ul class="navbar-nav nav mr-auto ">
+        <li class="nav-item ">
+          <a class="nav-link waves-effect waves-light" href="">Metas<br> <img class="" src="img/meta.png" href="60px" width="60px" alt=""></a>
         </li>
         <li class="nav-item">
           <a class="nav-link waves-effect waves-light" href="">SMART<br> <img src="img/idea.png" href="60px" width="60px" alt=""></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link waves-effect waves-light" href="">Planificación  <br> <img src="img/idea.png" href="60px" width="60px" alt=""></a>
+          <a class="nav-link waves-effect waves-light" href="">Planificación  <br> <img src="img/lapiz.png" href="60px" width="60px" alt=""></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link waves-effect waves-light" href="">Presupuesto <br> <img src="img/idea.png" href="60px" width="60px" alt=""></a>
+          <a class="nav-link waves-effect waves-light" href="">Presupuesto <br> <img src="img/pre.png" href="60px" width="60px" alt=""></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link waves-effect waves-light" href="">Plan B <br> <img src="img/idea.png" href="60px" width="60px" alt=""></a>
+          <a class="nav-link waves-effect waves-light" href="">Plan B <br> <img src="img/b.png" href="60px" width="60px" alt=""></a>
         </li>
       </ul>
+    </div>
   </nav>
   <!--/.Navbar-->
 
